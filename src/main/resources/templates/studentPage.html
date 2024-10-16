@@ -12,6 +12,10 @@
         <h2>
             Showcase Object:
         </h2>
+        <div th:object="${myStudent}">
+            <p th:text="*{name}"></p>
+            <p th:text="*{email}"></p>
+        </div>
         <p th:text="${myStudent.name}"></p>
         <p th:text="${myStudent.email}"></p>
 
